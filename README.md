@@ -4,11 +4,15 @@ This is the exact code that runs live at the "Cold Pool to Hot Queue" workshop. 
 
 **The point of this workshop:** deciding *which* images deserve a human's attention is the hard part, not fine-tuning the model. Steps 1 through 4 build the "cold start," a real pool of unlabeled UAV photos, so you can practice that decision yourself, live, in the App.
 
-**New to FiftyOne?** The companion [blog post](../annotation_in_fiftyone.md) opens with a 30-second primer on the core vocabulary, dataset, sample, field, view, and it's worth reading before you start if any of those terms are unfamiliar. Everything below assumes you already know what those words mean.
+All the scripts below live in `workshop-notebook/`; `cd` into it before running any of the commands on this page:
+
+```bash
+cd workshop-notebook
+```
 
 Here's what you're annotating for: four classes, deliberately balanced to roughly the same size, none labeled yet in the pool you're about to build.
 
-![What we're annotating for: the workshop's 4 target classes](../assets/class_examples_grid.png)
+![What we're annotating for: the workshop's 4 target classes](assets/class_examples_grid.png)
 
 ## Fast path: skip straight to the pool
 
@@ -125,4 +129,4 @@ python 08_reveal_eval_holdout_ground_truth.py
 
 ## Why these numbers
 
-Full details on where 10,561 (the source) and 1,754 (this pool) come from, and why every class is capped at roughly the same quota, are in the companion [blog post](../annotation_in_fiftyone.md) and [`TALK_BRIEF.md`](../TALK_BRIEF.md).
+Where 10,561 (the source) and 1,754 (this pool) come from, and why every class is capped at roughly the same quota, is explained inline in Step 2 above and in the docstring of `02_build_workshop_pool.py`.

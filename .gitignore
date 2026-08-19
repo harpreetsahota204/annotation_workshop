@@ -1,6 +1,7 @@
-# This repo ships only what a reader needs to reproduce the blog post /
-# workshop: the take-home pipeline scripts and the blog itself. Everything
-# below is prep, dev, speaker-only, or generated data and stays local.
+# This repo ships only what a reader needs to reproduce the workshop
+# take-home pipeline. Everything below is prep, dev, speaker-only, the
+# blog draft, or generated data and stays local.
+annotation_in_fiftyone.md
 
 # Raw / generated / downloaded data -- rebuild it yourself by running
 # workshop-notebook's numbered scripts, or pull the finished pool from
