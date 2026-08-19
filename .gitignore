@@ -1,0 +1,42 @@
+# This repo ships only what a reader needs to reproduce the blog post /
+# workshop: the take-home pipeline scripts and the blog itself. Everything
+# below is prep, dev, speaker-only, or generated data and stays local.
+
+# Raw / generated / downloaded data -- rebuild it yourself by running
+# workshop-notebook's numbered scripts, or pull the finished pool from
+# Hugging Face Hub (see workshop-notebook/README.md).
+workshop-notebook/data/
+InsPLAD-data/
+InsPLAD/
+finetuned_detection_model/
+
+# Speaker / internal prep materials, not part of the reader-facing take-home
+*.pptx
+*.docx
+backups/
+annotation_workshop_chat.json
+TALK_BRIEF.md
+WORKSHOP_EXECUTION.md
+demo_script.md
+slide_outline.md
+cold-pool-hot-queue-workshop-spec*.md
+
+# Maintainer-only scripts (Hub publishing, one-off embedding recompute) and
+# their logs -- not part of the numbered 01-08 pipeline a reader runs
+workshop-notebook/push_to_hub.py
+workshop-notebook/push_to_hub_initial.log
+workshop-notebook/recompute_radio.py
+workshop-notebook/radio_recompute.log
+*.log
+
+# Speaker-only fallback screenshots; class_examples_grid.png is the only
+# asset the blog and README actually reference
+assets/crop_query_heatmap_example.png
+assets/pool_clip_umap_by_class.png
+assets/pool_clip_umap_sanity_check.png
+assets/pool_radio_umap_by_class.png
+
+# Python / tooling artifacts
+__pycache__/
+*.pyc
+.ruff_cache/
