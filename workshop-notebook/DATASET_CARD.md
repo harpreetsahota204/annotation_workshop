@@ -18,7 +18,7 @@ tags:
 - power-line-inspection
 - uav
 - unlabeled
-description: A 1,754-image, media-only sample of InsPLAD-det (UAV power line inspection
+description: 'A 1,754-image, media-only sample of InsPLAD-det (UAV power line inspection
   imagery), built for a hands-on FiftyOne workshop on a complete annotation workflow.
   No label fields are attached by design; this is a genuine cold-start pool for
   practicing compression, embedding, seeded similarity search, and annotation
@@ -27,7 +27,7 @@ description: A 1,754-image, media-only sample of InsPLAD-det (UAV power line ins
   each of `tower id plate`, `polymer insulator`, `glass insulator`, and `yoke`
   (deliberately capped at the same quota so no class dominates the annotation
   budget), 574 images from 14 intact drone-flight sequences (a real near-duplicate
-  wall), and 215 long-tail images for texture.
+  wall), and 215 long-tail images for texture.'
 dataset_summary: '
 
 
@@ -117,10 +117,9 @@ labels exist. The images sampled into this pool were deliberately stratified
 to work with: genuine near-duplicate sequences, and four target classes
 deliberately balanced to roughly the same size instead of reproducing the class
 imbalance already present in the raw source data. See
-[Curation Rationale](#curation-rationale) below for exactly how, and the original
-scripts under `workshop-notebook/` in the
-[source repository](https://github.com/andreluizbvs/InsPLAD) companion materials
-for the full, runnable pipeline.
+[Curation Rationale](#curation-rationale) below for exactly how, and the
+[workshop's companion GitHub repository](https://github.com/harpreetsahota204/annotation_workshop/tree/main)
+for the full, runnable pipeline and workshop materials.
 
 - **Curated by:** Harpreet Sahota (Voxel51), sampled from InsPLAD (see Dataset
   Sources for the original dataset's curators)
@@ -456,8 +455,9 @@ Vieira-e-Silva, A. L. B., de Castro Felix, H., Simões, F. P. M., Teichrieb, V.,
 
 This is a derivative sampling of InsPLAD-det for the "Cold Pool to Hot Queue"
 FiftyOne workshop. The full pipeline that builds this pool from scratch (source
-download through media-only import) lives in the `workshop-notebook/` directory
-of the workshop's companion materials, as five numbered, reproducible scripts.
+download through media-only import), plus the in-App workshop steps and the
+eval-holdout reveal/scoring script, lives in the workshop's companion GitHub
+repository: **https://github.com/harpreetsahota204/annotation_workshop/tree/main**.
 For the full, labeled InsPLAD dataset (all three official sub-tasks, 49,706
 samples), see https://huggingface.co/datasets/harpreetsahota/InsPLAD.
 
